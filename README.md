@@ -1,4 +1,4 @@
-# pigfluxRNA-seq
+# Pigflux RNA-seq
 Analysis of RNA-seq normalized counts for pig flux data
 
 ## source files

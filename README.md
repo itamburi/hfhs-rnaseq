@@ -9,3 +9,12 @@ uniprot-human-genes and goterms mapping.tab - Gene ontology terms used to analyz
 ## All data and scripts available here:
 https://drive.google.com/drive/folders/10608_DRe-9vcRX7nAmsvTX7rKkUwoB33?usp=sharing
 
+## RNA-Seq analyses of transporters in Bae et al., 2025
+raw data used to perform PCA and Differential expression across pig organs fed a HFHS or control diet:
+normalized gene counts following batch adjustment: pan-organ transporter counts.csv
+list of know metabolite transporters used to analyze: metabolite transporter genes.csv
+Combined results from differential expression (HFHS/Ct) each organ: TRANSPORTER ONLY DE results tissue-specific
+Files are also available at: https://drive.google.com/drive/folders/1S3w5FXJuiIiUa9XwwQz10o7lJisJePIO?usp=drive_link
+
+
+

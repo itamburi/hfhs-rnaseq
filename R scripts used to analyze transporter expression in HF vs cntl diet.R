@@ -261,4 +261,13 @@ dev.off()
 
 
 
-
+## Heatmap of Bile Acid Enzymes Heatmap
+gene_set = c('CYP7A1', 'CYP27A1', 'CYP7B1', 'CYP8B1', 'HSD3B7', 'ABCD3', 'AMACR', 'ACOX2', 'HSD17B4', 'SCP2', 'ACOT8')
+full_melted_counts = read.csv('batch-adjusted counts based only set all pigs.csv')
+ff1 = full_melted_counts[full_melted_counts$Variable_ID %in% gene_set,]
+ff2 = dcast(ff1, Variable_ID~ diet_tissue, fun.aggregate = mean, value.var = 'value')
+row.names(ff2) = ff2$Variable_ID
+ff2$Variable_ID=NULL
+pdf(file = 'scaled heatmap only one sva adj.pdf')
+pheatmap(ff2, cluster_cols = F,  color = colorRampPalette(c("black", "orange", "white"))(100))
+dev.off()
